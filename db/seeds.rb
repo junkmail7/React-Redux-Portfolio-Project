@@ -1,0 +1,32 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+user1 = User.create(name: 'Test User 1')
+user2 = User.create(name: 'Test User 2')
+trick1 = Trick.create(name: 'Kickflip', difficulty: '1', type_of_trick: 'Flatground')
+trick2 = Trick.create(name: 'Heelflip', difficulty: '1', type_of_trick: 'Flatground')
+trick3 = Trick.create(name: 'Pop Shuv-it', difficulty: '1', type_of_trick: 'Flatground')
+trick4 = Trick.create(name: 'Frontside Pop Shuv-it', difficulty: '1', type_of_trick: 'Flatground')
+trick5 = Trick.create(name: 'Varial Kickflip', difficulty: '2', type_of_trick: 'Flatground')
+trick6 = Trick.create(name: 'Varial Heelflip', difficulty: '3', type_of_trick: 'Flatground')
+trick7 = Trick.create(name: 'Hardflip', difficulty: '3', type_of_trick: 'Flatground')
+trick8 = Trick.create(name: 'Inward Heelflip', difficulty: '3', type_of_trick: 'Flatground')
+trick9 = Trick.create(name: 'Treflip', difficulty: '3', type_of_trick: 'Flatground')
+trick10 = Trick.create(name: 'Bigspin', difficulty: '3', type_of_trick: 'Flatground')
+trick11 = Trick.create(name: '3-shuv', difficulty: '2', type_of_trick: 'Flatground')
+trick12 = Trick.create(name: 'Boardslide', difficulty: '1', type_of_trick: 'Grind')
+trick13 = Trick.create(name: '50-50', difficulty: '2', type_of_trick: 'Grind')
+trick14 = Trick.create(name: '5-0', difficulty: '1', type_of_trick: 'Grind')
+trick15 = Trick.create(name: 'Crook', difficulty: '3', type_of_trick: 'Grind')
+trick16 = Trick.create(name: 'Smith', difficulty: '3', type_of_trick: 'Grind')
+trick17 = Trick.create(name: 'Indy', difficulty: '1', type_of_trick: 'Grab')
+trick18 = Trick.create(name: 'Mute', difficulty: '1', type_of_trick: 'Grab')
+trick19 = Trick.create(name: 'Kickflip-Indy', difficulty: '3', type_of_trick: 'Grab')
+trick20 = Trick.create(name: 'FingerFlip', difficulty: '3', type_of_trick: 'Grab')
+UserTrick.create(user_id: 1, trick_id: 1)
+UserTrick.create(user_id: 1, trick_id: 4)
+UserTrick.create(user_id: 2, trick_id: 1)

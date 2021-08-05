@@ -1,0 +1,32 @@
+<%= form_with(model: trick) do |form| %>
+  <% if trick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trick.errors.count, "error") %> prohibited this trick from being saved:</h2>
+
+      <ul>
+        <% trick.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :difficulty %>
+    <%= form.number_field :difficulty %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_of_trick %>
+    <%= form.text_field :type_of_trick %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

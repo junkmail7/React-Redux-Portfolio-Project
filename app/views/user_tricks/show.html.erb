@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_trick.user_id %>
+</p>
+
+<p>
+  <strong>Trick:</strong>
+  <%= @user_trick.trick_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_trick_path(@user_trick) %> |
+<%= link_to 'Back', user_tricks_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trick.name %>
+</p>
+
+<p>
+  <strong>Difficulty:</strong>
+  <%= @trick.difficulty %>
+</p>
+
+<p>
+  <strong>Type of trick:</strong>
+  <%= @trick.type_of_trick %>
+</p>
+
+<%= link_to 'Edit', edit_trick_path(@trick) %> |
+<%= link_to 'Back', tricks_path %>
