@@ -1,2 +1,3 @@
 # React-Redux-Portfolio-Project
 Application for logging skate tricks
+Description: User based website used for logging skateboard tricks. How to use: Download the folder from GitHub, open within your code editor, then run the application by typing in rails s in the commandline. Sign up for an account, login to the account, log skateboard tricks and change proficiency as desired. Within the folder contains the LICENSE file.
