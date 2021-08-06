@@ -50,10 +50,6 @@ class UserTricksController < ApplicationController
   # DELETE /user_tricks/1 or /user_tricks/1.json
   def destroy
     @user_trick.destroy
-    respond_to do |format|
-      format.html { redirect_to user_tricks_url, notice: "User trick was successfully destroyed." }
-      format.json { head :no_content }
-    end
   end
 
   private

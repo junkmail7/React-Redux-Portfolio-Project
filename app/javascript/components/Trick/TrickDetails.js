@@ -1,5 +1,14 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import styled from 'styled-components'
+
+const Background = styled.div`
+background-color: #2b91af;
+color: #fff;
+text-align: center;
+padding: 7px;
+font-family: sans-serif;
+`
 
 const TrickDetails = (props) => {   
     const trick = useSelector((state) => state.seededTricks.trick)
@@ -17,13 +26,15 @@ const TrickDetails = (props) => {
     }
  
     return (
+    <Background>
     <div className="trick-card" key={1}>
         <div className="trick-name">Name: {name}</div>
         <div className="trick-difficulty">Difficulty: {difficulty}</div>
         <div className="trick-type">Type: {type_of_trick}</div>
         <div className="trick-type">Total users who logged this trick: {user_total}</div>
         <button onClick={props.handleButton}>Add Trick to Log </button>
-    </div>        
+    </div> 
+    </Background>       
     )
     
 }

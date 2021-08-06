@@ -13,7 +13,6 @@ const DisplayUser = () => {
             <p>Current User: {name}</p>
         </div>
     )
-    
 }
 
 export default DisplayUser

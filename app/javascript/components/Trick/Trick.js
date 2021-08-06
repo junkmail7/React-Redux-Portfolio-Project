@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom' 
+import { useParams, BrowserRouter as Router, Link } from 'react-router-dom' 
 import TrickDetails from './TrickDetails'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchTrick } from '../../redux/AddTricks/addtricks-actions'
 import { fetchUserTrick } from '../../redux/AddUserTricks/addusertrick-actions'
+import styled from 'styled-components'
+
+const Header = styled.h3`
+background: #0077cc;
+`
 
 const Trick = () => {
     const user = useSelector((state) => state.currentUser.user.data)
@@ -21,7 +26,11 @@ const Trick = () => {
     }
     
     return (
-    <div>Trick Info
+    <div>
+        <Header>Trick Info: 
+        <div><Link to={'/'}>Home</Link></div>
+        <div><Link to={'/tricks'}>Back</Link></div>
+        </Header>
         { <TrickDetails handleButton={handleButton}/> }
     </div>
     )

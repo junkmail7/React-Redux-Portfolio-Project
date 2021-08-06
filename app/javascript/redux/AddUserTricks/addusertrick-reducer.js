@@ -13,6 +13,8 @@ const userTrickReducer = (state = INITIAL_STATE, {type, payload}) => {
             return {...state, usertricks: payload}
         case actionTypes.UPDATE_USER_TRICK:
             return {...state, usertrick: payload}
+        case actionTypes.DELETE_USER_TRICK:
+            return {...state, usertrick: payload}
         default:
             return state; 
     }
